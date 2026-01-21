@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.operand {
+    width: 95px;
+    border: 1px solid black;
+}
+
+
+.calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+
+.aroundCalc {
+    background-color: rgb(173, 171, 171);
+    padding: 100px;
+    border-radius: 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 15px;
+}
+
+.manipulation {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.buttonResult {
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 0 0 4px rgb(0 0 0 / 1);
+}
