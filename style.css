@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+h2 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+input,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+body {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.wrapperToDo {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 8px;
+    width: 480px;
+    border-radius: 25px;
+}
+
+.priorityTitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 0px;
+    padding-bottom: 10px;
+}
+
+:focus::placeholder {
+    color: transparent;
+}
+
+input {
+    outline: none;
+}
+
+.input {
+    font-size: 18px;
+    border: 1px solid #BBBBBB;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.addButton {
+    color: #BBBBBB;
+    border: none;
+    font-size: 40px;
+    margin: 0;
+    position: absolute;
+    font-weight: 125;
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.taskText {
+    display: flex;
+    padding: 12px 45px;
+    width: 100%;
+}
+
+.inputTaskContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.taskContainer {
+    display: flex;
+    position: relative;
+    border: 1px solid #BBBBBB;
+    border-radius: 6px;
+    justify-content: flex-end;
+}
+
+.selectButtonTask {
+    position: absolute;
+    left: 7px;
+    width: 21px;
+    height: 21px;
+    top: 9px;
+}
+
+.deleteButtonTask {
+    position: absolute;
+    border: white;
+    font-size: 25px;
+    color: #BBBBBB;
+    font-weight: 250;
+    right: 3px;
+    top: 5px;
+}
+
+input[type='radio'] {
+    accent-color: #949292;
+}
