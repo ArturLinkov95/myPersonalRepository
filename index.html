@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body>
+    <div class="wrapperToDo">
+        <div>
+            <h2 class="priorityTitle">HIGH</h2>
+
+            <div class="inputTaskContainer">
+                <form class="inputContainer" id="highForm">
+                    <input class="input" type="text" name="task" required placeholder="Добавить важных дел">
+                    <button type="submit" class="addButton">+</button>
+                </form>
+
+                <div class="taskContainer">
+                    <p class="taskText">
+                        Вот вам и супер интересная тема.
+                        Вы наверняка заметили, что ваши файлы с
+                        кодом становятся все объемнее, что
+                        хочется вынести некоторые вещи куда-то
+                        за пределы основной программы.
+                    </p>
+                    <label class="labelRadioBatton">
+                        <input type="radio" class="selectButtonTask">
+                    </label>
+                    <button class="deleteButtonTask">X</button>
+                </div>
+
+                <div class="taskContainer">
+                    <p class="taskText">
+                        Сверстать этот TODO list
+                    </p>
+                    <label class="labelRadioBatton">
+                        <input type="radio" class="selectButtonTask">
+                    </label>
+                    <button class="deleteButtonTask">X</button>
+                </div>
+
+                <div class="taskContainer">
+                    <p class="taskText">
+                        Начать делать задачу
+                    </p>
+                    <label class="labelRadioBatton">
+                        <input type="radio" class="selectButtonTask">
+                    </label>
+                    <button class="deleteButtonTask">X</button>
+                </div>
+
+                <h2 class="priorityTitle">LOW</h2>
+
+                <div class="inputTaskContainer">
+                    <div class="inputContainer">
+                        <input class="input" type="text" placeholder="Добавить важных дел">
+                        <button class="addButton">+</button>
+                    </div>
+
+                    <div class="taskContainer">
+                        <p class="taskText">
+                            Посмотреть ютубчик
+                        </p>
+                        <label class="labelRadioBatton">
+                            <input type="radio" class="selectButtonTask">
+                        </label>
+                        <button class="deleteButtonTask">X</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
