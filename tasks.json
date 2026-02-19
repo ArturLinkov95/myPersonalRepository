@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "name": "Купить молока",
+      "priority": "Low",
+      "status": "To Do"
+    },
+    {
+      "name": "Сходить в спортзал",
+      "priority": "High",
+      "status": "To Do"
+    },
+    {
+      "name": "Полить цветы",
+      "priority": "High",
+      "status": "To Do"
+    },
+    {
+      "name": "Вымыть посуду",
+      "priority": "Medium",
+      "status": "To Do"
+    },
+        {
+      "name": "Сделать домашнее задание",
+      "priority": "High",
+      "status": "To Do"
+    }
+  ]
+}
