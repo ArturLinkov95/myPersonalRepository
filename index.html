@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-container">
+            <form class="form">
+                <input type="text" class="form-input" required placeholder="Aktobe">
+                <button type="submit" class="form-button">&#128269</button>
+            </form>
+        </div>
+
+        <div class="wrapper-weather">
+
+            <div class="weather-container">
+                <h2 class="temp">0°</h2>
+
+                <div class="img-chose-container">
+                    <div class="weather-img-container">
+                        <img class="weather-img" src="cloud.png" alt="Weather Image">
+                    </div>
+                    <div class="chose-select-container">
+                        <h3 class="select-city"></h3>
+                        <button class="chose-button"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="added-location-container">
+                <div>
+                    <h3 class="added-location-title">Added Locations:</h3>
+                </div>
+                <div>
+                    <ul class="added-location-list">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
