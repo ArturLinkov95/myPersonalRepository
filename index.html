@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-container">
+            <form class="form">
+                <input type="text" class="form-input" required placeholder="Aktobe">
+                <button type="submit" class="form-button">&#128269</button>
+            </form>
+        </div>
+
+        <div class="wrapper-weather">
+
+            <div class="weather-container">
+                <div class="chose-select-container">
+                    <h3 class="select-city"></h3>
+                    <button class="chose-button"></button>
+                </div>
+
+                <div class="img-chose-container">
+                    <h2 class="temp">0°</h2>
+                    <div class="weather-img-container">
+                        <img class="weather-img" src="./icon-rain.svg" alt="Weather Image">
+                    </div>
+                </div>
+
+                <div class="weather-info-container">
+                    <ul class="weather-info-ul">
+                        <li class="feels-like"></li>
+                        <li class="sunrise"></li>
+                        <li class="sunset"></li>
+                    </ul>
+
+                    <ul class="extra-weather">
+                        <li class="extra-time" id="extra-time-one"></li>
+                        <div class="extra-temp-img-one">
+                            <div class="extra-temp-feels">
+                                <li class="extra-temp" id="extra-temp-one"></li>
+                                <li class="extra-feels-like" id="extra-feels-like-one"></li>
+                            </div>
+                            <div class="extra-img-container">
+                                <img class="extra-img-one" id="extra-img-one" src="">
+                            </div>
+                        </div>
+                        <hr class="extra-hr hr-class" id="hr-one">
+                    </ul>
+
+                    <ul class="extra-weather">
+                        <li class="extra-time" id="extra-time-two"></li>
+                        <div class="extra-temp-img-two">
+                            <div class="extra-temp-feels">
+                                <li class="extra-temp" id="extra-temp-two"></li>
+                                <li class="extra-feels-like" id="extra-feels-like-two"></li>
+                            </div>
+                            <div class="extra-img-container">
+                                <img class="extra-img-two" id="extra-img-two" src="">
+                            </div>
+                        </div>
+                        <hr class="extra-hr hr-class" id="hr-two">
+                    </ul>
+
+                    <ul class="extra-weather">
+                        <li class="extra-time" id="extra-time-three"></li>
+                        <div class="extra-temp-img-three">
+                            <div class="extra-temp-feels">
+                                <li class="extra-temp" id="extra-temp-three"></li>
+                                <li class="extra-feels-like" id="extra-feels-like-three"></li>
+                            </div>
+                            <div class="extra-img-container">
+                                <img class="extra-img-three" id="extra-img-three" src="">
+                            </div>
+                        </div>
+                        <hr class="extra-hr hr-class" id="hr-three">
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="added-location-container">
+                <div>
+                    <h3 class="added-location-title">Added Locations:</h3>
+                </div>
+                <div>
+                    <ul class="added-location-list"></ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
