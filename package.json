@@ -1,0 +1,24 @@
+{
+  "name": "mypersonalrepository",
+  "version": "1.0.0",
+  "description": "My first project",
+  "homepage": "https://github.com/ArturLinkov95/myPersonalRepository#readme",
+  "bugs": {
+    "url": "https://github.com/ArturLinkov95/myPersonalRepository/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturLinkov95/myPersonalRepository.git"
+  },
+  "license": "ISC",
+  "author": "Lance",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "vite": "^8.0.8"
+  }
+}
