@@ -1,5 +1,7 @@
 import { saveCurrentCity, loadCurrentCities, saveFavoriteCity, loadFavoriteCities } from './storage.js';
 
+import { format } from 'https://esm.sh/date-fns';
+
 const input = document.querySelector('.form-input');
 const form = document.querySelector('.form');
 const addedLocationList = document.querySelector('.added-location-list');
@@ -141,26 +143,12 @@ async function searchWeather(cityName) {
         const feelsLikeMath = Math.round(feelsLike - 273.15);
 
         const sunrise = result.sys.sunrise;
-        const sunriseDate = new Date(sunrise * 1000);
-
-        const sunriseDateHour = String(sunriseDate.getHours());
-        const sunriseDateHourPad = sunriseDateHour.padStart(2, "0");
-
-        const sunriseDateMinutes = String(sunriseDate.getMinutes());
-        const sunriseDateMinutesPad = sunriseDateMinutes.padStart(2, "0");
-        
-        const sunriceTimeResult = `${sunriseDateHourPad}:${sunriseDateMinutesPad}`;
+        const sunriceThousen = sunrise * 1000;
+        const sunriceTimeResult = format(sunriceThousen, 'HH:mm'); // время рассвета
 
         const sunset = result.sys.sunset;
-        const sunsetDate = new Date(sunset * 1000);
-
-        const sunsetDateHour = String(sunsetDate.getHours());
-        const sunsetDateHourPad = sunsetDateHour.padStart(2, "0");
-
-        const sunsetDateMinutes = String(sunsetDate.getMinutes());
-        const sunsetDateMinutesPad = sunsetDateMinutes.padStart(2, "0");
-
-        const sunsetTimeResult = `${sunsetDateHourPad}:${sunsetDateMinutesPad}`;
+        const sunsetThousen = sunset * 1000;
+        const sunsetTimeResult = format(sunsetThousen, 'HH:mm');
 
         const tempResultMath = Math.round(tempResult - 273.15);
 
