@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #535353;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-size: inherit;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #f2f2f2;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.auth-wrapper {
+    box-sizing: border-box;
+    width: 273px;
+    background-color: #FFFFFF;
+    padding: 21px 14px 14px;
+    margin: 10px auto;
+    min-height: 319px;
+}
+
+.auth-title {
+    font-size: 16px;
+    padding-bottom: 70px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.auth-email-send,
+.auth-code-input {
+    padding: 7px 8px;
+    border: 1px black solid;
+}
+
+.auth-code-input {
+    padding-right: 26px;
+}
+
+.auth-form {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+.auth-email-input {
+    max-width: 241px;
+    padding: 7px 0px;
+}
