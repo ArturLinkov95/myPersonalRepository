@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат: авторизация</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-title">
+            <h2>Авторизация</h2>
+        </div>
+        <form class="auth-form" id="auth-form">
+            <label for="email-input">Почта:</label>
+            <input type="email" class="auth-email-input" id="email-input" placeholder="Введите свою почту" required>
+
+            <div class="auth-buttons">
+                <button type="submit" class="auth-email-send">Получить код</button>
+                <button type="button" class="auth-code-input">Ввести код</button>
+            </div>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
