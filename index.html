@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат: смена имени</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="settings-wrapper">
+        <div class="settings-body">
+            <div class="title-bar">
+                <h2>Настройки</h2>
+                <button type="button" class="button-close" aria-label="Закрыть">&times;</button>
+            </div>
+
+            <form class="name-form" id="name-form">
+                <label for="name-input">Имя в чате</label>
+                <div class="input-row">
+                    <input type="text" class="name-input" id="name-input" placeholder="Введите имя" required>
+                    <button type="submit" class="name-form-button">→</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
