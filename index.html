@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="chat-panel">
+            <button class="button-settings">Настройки</button>
+            <button class="button-exit">Выйти</button>
+        </div>
+        <div class="chat-list" id="chat-list">
+            <template id="template-from">
+                <div class="message-from">
+                    <p class="message-text"></p>
+                    <p class="message-time"></p>
+                </div>
+            </template>
+            <template id="template-me">
+                <div class="message-me">
+                    <p class="message-text"></p>
+                    <p class="message-time"></p>
+                </div>
+            </template>
+        </div>
+        <form class="chat-send" id="chat-send">
+            <input type="text" class="chat-input" id="chat-input" placeholder="Сообщение..." name="message">
+            <button class="button-send" id="button-send" type="submit">-></button>
+        </form>
+    </div>
+    <script type="module" src="./dist/main.js"></script>
+</body>
+
+</html>
