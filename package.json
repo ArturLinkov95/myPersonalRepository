@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vite": "^8.2.0"
+  },
+  "name": "mypersonalrepository",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturLinkov95/myPersonalRepository.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ArturLinkov95/myPersonalRepository/issues"
+  },
+  "homepage": "https://github.com/ArturLinkov95/myPersonalRepository#readme"
+}
